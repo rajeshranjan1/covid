@@ -11,7 +11,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate } }) => {
     const activeCase = confirmed.value -(recovered.value+ deaths.value)
     return(
         
-        <div>
+        <div className="container">
             <div className="row">
                 <div className="col text-center">
                     <h5 className="total-case">Total Cases Reported Till : {new Date(lastUpdate).toDateString()}</h5>

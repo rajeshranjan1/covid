@@ -3,6 +3,8 @@ import './App.css';
 import Header from './components/Header/Header'
 import {Cards, Chart, CountryPicker} from './components'
 import {fetchData} from './Api'
+import Footer from './components/Footer/Footer';
+import ContentBox from './components/ContentBox/ContentBox';
 
 
 class App extends Component{
@@ -30,31 +32,12 @@ class App extends Component{
     const { data , country} = this.state;
     return (
       <div className="App">
-        <div className="container">
         <Header />
-          <h1>Covid-19 DashBoard</h1> 
-          {/* <h1>
-          <span>C</span>
-          <span>o</span>
-          <span>r</span>
-          <span>o</span>
-          <span>n</span>
-          <span>a</span>
-          <span>-</span>
-          <span>d</span>
-          <span>a</span>
-          <span>s</span>
-          <span>h</span>
-          <span>b</span>
-          <span>o</span>
-          <span>a</span>
-          <span>r</span>
-          <span>d</span>
-        </h1> */}
-        < Cards data={data}/>
-        < CountryPicker handleCountryChange={this.handleCountryChange} />
-        < Chart data={data} country={country}/>
-        </div>
+        <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <Cards data={data}/>
+        <Chart data={data} country={country}/>
+        < ContentBox />
+        <Footer/>
       </div>
     );
   }
