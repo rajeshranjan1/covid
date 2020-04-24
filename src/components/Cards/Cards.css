@@ -1,3 +1,9 @@
+.cards-wrap{
+    background: #f8f9fe;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
 .card-wrapper{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -20,10 +26,14 @@
 }
 
 .card-wrapper .col h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
     font-weight: 700;
 }
 
 .card-wrapper .col h3 span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -36,7 +46,11 @@
 }
 
 .total-case{
-    color: #c50606;
+    background:  -webkit-linear-gradient(145deg,#f81f01,#ee076e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
 }

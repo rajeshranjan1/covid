@@ -14,8 +14,8 @@ const CountryPicker = ({handleCountryChange}) => {
     },[setFetchedCountries]);
 
     return(
-        <div className="container">
-            <div className="country-picker">
+        <div className="country-picker">
+            <div className="container">
                 <div className="row justify-content-md-center text-center">
                     <div className="col-md-4 ">
                         <Form className="">

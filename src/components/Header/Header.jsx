@@ -35,6 +35,7 @@ class Header extends Component {
     
     render() {
         const {confirmed, deaths, recovered} = this.state;
+        const activeCase = confirmed -(recovered+ deaths)
 
         const barChart = (
             confirmed
@@ -55,19 +56,11 @@ class Header extends Component {
                 }] 
             }}
             options = {{
-                    legend :{
-                        display : false,
-                        labels : {
-                            defaultFontSize :25
-                        }
-                    },
+                    legend :{display : false},
                     title :{display : true, text : `Current State In India`},
-                    
-               
-            }}
+                }}
             />) : null
         )
-        const activeCase = confirmed -(recovered+ deaths)
 
         return (
             <div> 

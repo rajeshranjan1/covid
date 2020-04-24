@@ -1,4 +1,5 @@
 .country-picker{
+    background: #f8f9fe;
     padding-top: 20px;
 }
 
@@ -6,6 +7,8 @@
     margin-top: 20px;
 }
 .country-picker label{
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 700;
+    text-transform: uppercase;
 }

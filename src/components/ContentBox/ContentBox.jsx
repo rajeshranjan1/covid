@@ -19,7 +19,7 @@ function ContentBox() {
                     </div>
                     <div className="col col-lg-4 col-md-4 col-sm-12 col-12 content">
                         <h4> <span>#.</span>Please don't walk unneccesary</h4>
-                        <p><strong> Why? </strong>  It is irresponsible behaviour as a citizen on India. Against Corono virus a large number of Doctors, Police, Delivery boys, Soldiers are giving their efforts. Hence request to you please do not go out side of your home. #StayHomeStaySafe</p>
+                        <p><strong> Why? </strong>  It is irresponsible behaviour as a citizen of India. Against Corono virus a large number of Doctors, Police, Delivery boys, Soldiers are giving their efforts. Hence request to you please do not go out side of your home. #StayHomeStaySafe</p>
                     </div>
                 </div>
             </div>

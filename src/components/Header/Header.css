@@ -139,12 +139,9 @@
 
 @media screen and (max-width :767px ){
     .india-figure{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto ;
     }
-    .grid1{
-        grid-column: 1 / span 2;
-        grid-row: 1;
-    }
+    
     .advice{
         font-size: 70px;
         line-height: 75px;

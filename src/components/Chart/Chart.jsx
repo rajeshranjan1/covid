@@ -25,7 +25,7 @@ const Charts = ({data : {confirmed, recovered, deaths}, country}) => {
                 pointBackgroundColor : 'rgba(76,0,255,0.76)',
                 pointBorderColor : 'rgba(76,0,255,0.85)',
                 backgroundColor : 'rgba(76,0,255,0.56)',
-                fill : false
+                fill : true
             },{
                 data :  dailyData.map(({deaths}) => deaths),
                 label : 'Total Deaths',
@@ -33,7 +33,7 @@ const Charts = ({data : {confirmed, recovered, deaths}, country}) => {
                 backgroundColor : 'rgba(255, 0, 0, 0.45)',
                 pointBackgroundColor : 'rgba(255, 0, 0, 0.34)',
                 pointBorderColor : 'rgba(255, 0, 0,1)',
-                fill : false
+                fill : true
             }]
         }}
         />) : null
