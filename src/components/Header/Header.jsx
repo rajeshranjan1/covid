@@ -15,7 +15,7 @@ class Header extends Component {
                             </div>
                             <div className="col col-lg-6 col-md-6  col-12 right">
                                 <ul className="menu">
-                                    <li><NavLink to='/' >Home</NavLink></li>
+                                    <li><NavLink to='/covid' >Home</NavLink></li>
                                     <li><NavLink to='/country' >Browse By Country</NavLink></li>
                                 </ul>
                             </div>
