@@ -11,7 +11,7 @@ class Header extends Component {
                     <div className="container">
                         <header className="row header ">
                             <div className="col col-lg-6 col-md-6 col-12  left">
-                                <h1 className="theme-gradient "><NavLink to='/' >Corona Dashboard</NavLink></h1> 
+                                <h1 className="theme-gradient "><NavLink to='/covid' >Corona Dashboard</NavLink></h1> 
                             </div>
                             <div className="col col-lg-6 col-md-6  col-12 right">
                                 <ul className="menu">

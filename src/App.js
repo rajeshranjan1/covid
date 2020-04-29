@@ -14,7 +14,7 @@ class App extends Component{
           <div className="App">
             <Header />
             <Switch>
-              <Route exact path="/" component={HomeData} />
+              <Route exact path="/covid" component={HomeData} />
               <Route path="/country" component={CountryWise} />
             </Switch>
             <Footer/>
