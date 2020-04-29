@@ -1,47 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header'
-import {Cards, Chart, CountryPicker} from './components'
-import {fetchData} from './Api'
 import Footer from './components/Footer/Footer';
-import ContentBox from './components/ContentBox/ContentBox';
+import HomeData from './components/HomeData/HomeData';
+import CountryWise from './components/CountryWise/CountryWise'
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 
 class App extends Component{
-  state = {
-    data : {},
-    country : ''
-  }
-
-  async componentDidMount(){
-    const fetchedData = await fetchData();
-    this.setState({
-      data : fetchedData
-    })
-  }
-
-  handleCountryChange = async (country) => {
-    const fetchedData = await fetchData(country);
-    this.setState({
-      data : fetchedData,
-      country : country
-    })
-  }
-
-  render(){
-    const { data , country} = this.state;
-    return (
-      <div className="App">
-        <Header />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Cards data={data}/>
-        <Chart data={data} country={country}/>
-        < ContentBox />
-        <Footer/>
-      </div>
+    render(){
+      return (
+        <BrowserRouter>
+          <div className="App">
+            <Header />
+            <Switch>
+              <Route exact path="/" component={HomeData} />
+              <Route path="/country" component={CountryWise} />
+            </Switch>
+            <Footer/>
+          </div>
+        </BrowserRouter>
     );
   }
 }
-
 
 export default App;

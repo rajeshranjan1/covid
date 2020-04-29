@@ -1,0 +1,54 @@
+/* Prevention Css */
+
+.prevention{
+    background:#101010;
+    color: #c6c9d8;
+    padding: 80px 0;
+ }
+ 
+ .advice{
+     font-size: 85px;
+     text-transform: uppercase;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+     line-height: 90px;
+     padding-bottom: 50px;
+ }
+ .theme-gradient {
+     background:  -webkit-linear-gradient(145deg,#f81f01,#ee076e);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ 
+ .content h4{
+     font-size: 25px;
+     text-transform: uppercase;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     margin-bottom: 15px;
+ }
+ 
+ .content h4 span{
+     display: inline-block;
+     margin-right: 8px;
+     background:  -webkit-linear-gradient(145deg,#f81f01,#ee076e);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ 
+ .content p{
+     font-size: 16px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 500;
+ }
+
+
+ @media screen and (max-width :767px ){
+    
+    .advice{
+        font-size: 70px;
+        line-height: 75px;
+    }
+}
