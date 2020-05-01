@@ -44,7 +44,7 @@ class CountryWise extends Component {
                                     <th>Country </th>
                                     <th className="text-center skyblue">Total</th>
                                     <th className="text-center yellow">Active</th>
-                                    <th className="text-center green">Recoverd</th>
+                                    <th className="text-center green">Recovered</th>
                                     <th className="text-center red">Deaths</th>
                                     <th >New Case</th>
                                     <th>Today Death</th>
