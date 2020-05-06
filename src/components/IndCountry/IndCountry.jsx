@@ -80,12 +80,18 @@ class IndCountry extends Component{
             }}
             />) : null
         )
-        
+   
     const { code, title, total, active, death, recovered } = this.props.location.state[0]
+    const imgUrl = `https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/${code.toLowerCase()}.svg`
     return (
         <>
         {isLoading ? 
-            (<div className="country-details">
+            (<div className="country-details" style={{  
+                backgroundImage: 'url(' + imgUrl + ')',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+              }}>
                 <div className=" country-header text-center container">
                     <h2>{code === 'DP' ? null : <img className="country-image" alt={title} src={`https://www.countryflags.io/${code}/flat/${64}.png`} />} {title}</h2>
                 </div>
