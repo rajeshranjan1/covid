@@ -1,0 +1,56 @@
+
+.country-details{
+    background: #f8f9fe;
+    .country-header{
+        padding:15px 0;
+        h2{
+           color:  #1f1f25;
+            font-size: 34px;
+            font-weight: 700; 
+        }
+    }
+    .con-details{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        margin-bottom: 40px;
+        div{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            h2{
+                color: #1f1f25;
+                font-size: 30px;
+                font-weight: 700;
+                span{
+                    background: -webkit-linear-gradient(145deg,#f81f01,#ee076e);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: block;
+                    font-size: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    button{
+        margin: 20px 0;
+          a{
+            color: #212529;
+            text-decoration: none;
+          }
+    }
+}
+
+@media screen and (max-width:767px){
+    .country-details{
+        .con-details{
+            grid-template-columns: auto ;
+            div{
+                padding:5px 0;
+            }
+        }
+    }
+}

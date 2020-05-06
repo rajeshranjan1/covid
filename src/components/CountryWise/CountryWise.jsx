@@ -5,13 +5,14 @@ import './CountryWise.css'
 import CountryData from './CountryData'
 import PreLoader from '../Loader/Loader'
 
+
 const apiUrl = 'https://api.thevirustracker.com/free-api?countryTotals=ALL/'
 
 class CountryWise extends Component {
     constructor(props) {
         super(props)
         this.state = {
-             countries : [{}],
+             countries : [],
              isLoading : false
         }  
     }
@@ -46,9 +47,7 @@ class CountryWise extends Component {
                                     <th className="text-center yellow">Active</th>
                                     <th className="text-center green">Recovered</th>
                                     <th className="text-center red">Deaths</th>
-                                    <th >New Case</th>
-                                    <th>Today Death</th>
-                                    <th>Serious Case</th>
+                                    <th className="text-center serious">Serious Case</th>
                                 </tr>
                             </thead>
                             <tbody>

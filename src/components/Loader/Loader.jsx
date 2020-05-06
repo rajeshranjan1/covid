@@ -11,7 +11,7 @@ function PreLoader() {
                     color="#f81f01"
                     height={80}
                     width={80}
-                    timeout={6000} //3 secs
+                    timeout={20000} //10 secs
                 />
             </div>
         </>

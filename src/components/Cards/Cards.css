@@ -1,3 +1,6 @@
+.card-wrapper .card{
+    background: none;
+}
 .cards-wrap{
     background: #f8f9fe;
     margin-bottom: 20px;
@@ -29,6 +32,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .card-wrapper .col h3 span{
