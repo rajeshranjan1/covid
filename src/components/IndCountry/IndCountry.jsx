@@ -93,7 +93,7 @@ class IndCountry extends Component{
                 backgroundRepeat: 'no-repeat'
               }}>
                 <div className=" country-header text-center container">
-                    <h2>{code === 'DP' ? null : <img className="country-image" alt={title} src={`https://www.countryflags.io/${code}/flat/${64}.png`} />} {title}</h2>
+                    <h2>{code === 'DP' ? null : <img className="country-image" alt={title} src={`https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/${code.toLowerCase()}.svg`} />} {title}</h2>
                 </div>
                 <div className="container">
                     <div className="row">

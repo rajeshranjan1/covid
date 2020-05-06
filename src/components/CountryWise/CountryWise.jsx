@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table'
 import './CountryWise.css'
 import CountryData from './CountryData'
 import PreLoader from '../Loader/Loader'
+import BackToTop from '../BackToTop/BackToTop';
 
 
 const apiUrl = 'https://api.thevirustracker.com/free-api?countryTotals=ALL/'
@@ -55,6 +56,7 @@ class CountryWise extends Component {
                                 <CountryData key={i} country={country} />)}
                             </tbody>
                         </Table>
+                        <BackToTop/>
                     </div>
                 </div>)
             : <PreLoader/> }

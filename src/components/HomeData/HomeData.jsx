@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {Cards, Chart, CountryPicker, ContentBox, IndiaData, Prevention} from '../../components'
 import {fetchData} from '../../Api'
+import BackToTop from '../BackToTop/BackToTop';
+
 
 class HomeData extends Component{
     state = {
@@ -33,6 +35,7 @@ class HomeData extends Component{
                 <Cards data={data}/>
                 <Chart data={data} country={country}/>
                 <ContentBox/>
+                < BackToTop />
             </div>
         )
     }

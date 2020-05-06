@@ -1,0 +1,18 @@
+.backToTop{
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    background: #f61e1c;
+    padding: 17px 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    box-shadow: inset 2px 2px 15px #484848;
+    text-shadow: 2px 1px 1px #444444;
+    font-size: 9px;
+    text-align: center;
+}
